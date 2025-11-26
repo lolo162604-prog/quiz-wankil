@@ -1,0 +1,12 @@
+{
+  "name": "quiz-multi",
+  "version": "1.0.0",
+  "main": "serveur.js",
+  "scripts": {
+    "start": "node serveur.js"
+  },
+  "dependencies": {
+    "express": "^latest",
+    "socket.io": "latest"
+  }
+}

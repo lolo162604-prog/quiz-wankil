@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Quiz K-Culture Multi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <h1>Quiz K-Culture Multijoueur</h1>
+    <div id="login">
+        <input id="pseudo" placeholder="Ton pseudo">
+        <button onclick="createLobby()">Créer partie</button>
+        <input id="joinCode" placeholder="Code lobby">
+        <button onclick="joinLobby()">Rejoindre</button>
+    </div>
+
+    <div id="lobby" class="hidden">
+        <h2>Lobby</h2>
+        <p class="lobby-code">Code à partager : <span id="lobbyCode"></span></p>
+        <p>Joueurs: <span id="playersList"></span></p>
+        <button onclick="startQuiz()">Commencer</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+        <h2 id="question"></h2>
+        <div id="media"></div>
+        <input id="answer" placeholder="Ta réponse">
+        <button onclick="submitAnswer()">Valider</button>
+        <div id="timer"></div>
+    </div>
+
+    <div id="correction" class="hidden">
+        <h2 id="corrQuestion"></h2>
+        <p>Réponse correcte : <span id="corrAnswer"></span></p>
+        <p>Joueur : <span id="corrPlayer"></span></p>
+        <p>Sa réponse : <span id="playerAnswer"></span></p>
+        <button onclick="mark(true)">J'ai eu bon</button>
+        <button onclick="mark(false)">J'ai eu faux</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2 id="winner"></h2>
+        <button onclick="restart()">Rejouer</button>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>

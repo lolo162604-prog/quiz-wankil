@@ -1,0 +1,165 @@
+/* ------------------------------
+   STYLE GENERAL
+------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #1a1a1a, #111111);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(20,20,20,0.85);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff3b3b, 0 0 40px #00eaff;
+}
+
+/* ------------------------------
+   TITRES
+------------------------------- */
+h1 {
+    font-size: 2.5rem;
+    color: #ff3b3b;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #5cff5c;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #00eaff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00eaff;
+}
+
+/* ------------------------------
+   INPUTS & BUTTONS
+------------------------------- */
+input, button {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+button {
+    background: #ff3b3b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00eaff;
+    color: #111;
+}
+
+/* ------------------------------
+   SECTIONS
+------------------------------- */
+.hidden { display: none; }
+
+#playersList {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.lobby-code {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#lobbyCode {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5cff5c;
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    letter-spacing: 3px;
+    border: 2px dashed #5cff5c;
+}
+
+#quiz, #correction, #result, #lobby {
+    margin-top: 20px;
+}
+
+#media img, #media iframe, #media audio {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ------------------------------
+   TIMER
+------------------------------- */
+#timer {
+    font-size: 1.5rem;
+    color: #ff3b3b;
+    margin-top: 15px;
+}
+
+/* ------------------------------
+   CORRECTION
+------------------------------- */
+#correction button {
+    width: 40%;
+    margin: 10px 5px;
+    background: #3b82f6;
+}
+
+#corrAnswer {
+    color: #5cff5c;
+}
+
+#playerAnswer {
+    color: #4da6ff;
+}
+
+/* ------------------------------
+   RESULTAT
+------------------------------- */
+#winner {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
