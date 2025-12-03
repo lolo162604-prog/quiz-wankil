@@ -1,12 +1,18 @@
 {
-  "name": "quiz-multi",
+  "name": "Wanculture",
   "version": "1.0.0",
+  "description": "Jeu de quiz multijoueur en ligne",
   "main": "serveur.js",
   "scripts": {
     "start": "node serveur.js"
   },
   "dependencies": {
-    "express": "^latest",
-    "socket.io": "latest"
-  }
+    "express": "^4.18.2",
+    "socket.io": "^4.7.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "author": "Lolow",
+  "license": "MIT"
 }
